@@ -15,7 +15,7 @@ class App extends Component {
       };
     }
 
-  componentWillMount() {
+  componentDidMount() {
     this.timerId = setInterval(() => {
       const time = new Date().toLocaleTimeString();
       this.setState({
