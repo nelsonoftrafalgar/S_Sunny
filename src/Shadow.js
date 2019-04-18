@@ -1,12 +1,13 @@
-import React from 'react';
-import './App.css';
+import React from "react"
+import "./App.css"
 
-const Shadow = (props) => {
-    return (
-      <div className='shadow'>
-        <p className="glow shadow-number">{props.time}</p>
-      </div>
-    );
+const Shadow = ({time}) => {
+    
+  return (
+    <div className="shadow">
+      <p className="glow shadow-number">{time}</p>
+    </div>
+  )
 }
 
-export default Shadow;
+export default Shadow

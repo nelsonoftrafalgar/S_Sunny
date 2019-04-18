@@ -1,13 +1,10 @@
-import React from 'react';
-import './App.css';
+import React from "react"
+import "./App.css"
+import {setPins} from "./helpers"
+import { PINS } from "./data"
 
 const MetalCase = () => {
-
-  const pinsArr = [0,1,2,3,4,5];
-
-  const pins = pinsArr.map(pin => {
-      return <div className="pins" key={pin}></div>
-  })
+  const pins = setPins(PINS)
 
   return (
     <div className="metal-case gradient-metalic">
@@ -25,4 +22,4 @@ const MetalCase = () => {
   )
 }
 
-export default MetalCase;
+export default MetalCase
